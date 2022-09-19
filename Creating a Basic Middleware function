@@ -1,0 +1,9 @@
+Const myLoader = function(req, res, next){
+ console.log ("Request ip" + req.ip);
+ console.log ("Request Methods" + req+method);
+ console.log ("Request Date" + newDate());
+ 
+ next();
+ } 
+ 
+ app.use(myLoader);
